@@ -4,7 +4,7 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 
-declare function Read(options: Read.Options, callback: (error: any, result: string, isDefault: boolean) => any): void;
+declare function Read(options: Read.Options): Promise<string>;
 
 declare namespace Read {
     interface Options {
